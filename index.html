@@ -570,222 +570,22 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                         <li><b>ArrayDPS-A3</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, third sampled result</li>
                         <li><b>ArrayDPS-A4</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, fourth sampled result</li>
                         <li><b>ArrayDPS-A5</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, fifth sampled result</li>
-                        <li><b>TF-GridNet-SMS</b> - Our reproduced TF-GridNet supervised model  trained on SMSWSJ, as in row 5b in paper's result table</li>
+                        <li><b>TF-GridNet-SMS</b> - Our reproduced TF-GridNet supervised model  trained on SMSWSJ, as in row 5b in paper's result table 1</li>
+                        <li><b>TF-GridNet-Spatial</b> - Our reproduced TF-GridNet supervised model  trained on Spatialized WSJ, as in row 6a in paper's result table 2</li>
                     </ul>
                 <p></p>
 
                 <p align="justify">
-                    Here are some randomly selected audio samples (no cherry picking) for SMS-WSJ dataset (aligned with UNSSOR's demo), we first show the 3 channel separation demos.
+                    Here are some randomly selected audio samples (no cherry picking) for SMS-WSJ dataset (aligned with UNSSOR's demo), we show the 3 channel separation demos.
                 </p>
 
                 <br>
 
-                <!-- sample 1 start -->
-                <h4><b><p style="color:red;font-size:18px;">Sample 1: 0_442c040o_443c040g</p></b></h4>
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Mixture</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <!-- <td rowspan="2">
-                                <b>A</b>
-                            </td> -->
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/mixture/smswsj/0_442c040o_443c040g.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
 
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Methods</th>
-                            <th style="text-align:center;">Source 1</th>
-                            <th style="text-align:center;">Source 2</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Clean</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/clean/smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/clean/smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Spatial Clustering</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/spatialcluster/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/spatialcluster/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>IVA</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/IVA/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/IVA/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>UNSSOR</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/UNSSOR/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/UNSSOR/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-ML</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A1</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_0/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_0/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A2</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_1/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_1/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A3</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_2/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_2/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A4</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_3/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_3/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A5</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>TF-GridNet-SMS</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/supervised/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/supervised/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-                <!-- sample 1 end -->
 
 
                 <!-- sample 2 start -->
-                <h4><b><p style="color:red;font-size:18px;">Sample 2: 1015_446c0415_442c040c</p></b></h4>
+                <h4><b><p style="color:red;font-size:18px;">Sample 1: 1015_446c0415_442c040c</p></b></h4>
                 <table class="audio_demos">
                     <thead>
                         <tr>
@@ -986,6 +786,209 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                     </tbody>
                 </table>
                 <!-- sample 2 end -->
+
+                <!-- sample 4 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 2: 15_443c040a_444c0415</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/mixture/smswsj/15_443c040a_444c0415.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>UNSSOR</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-SMS</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 4 end -->
 
                 <!-- sample 3 start -->
                 <h4><b><p style="color:red;font-size:18px;">Sample 3: 1120_445c040c_441c040m</p></b></h4>
@@ -1190,208 +1193,208 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 </table>
                 <!-- sample 3 end -->
 
-                <!-- sample 4 start -->
-                <h4><b><p style="color:red;font-size:18px;">Sample 4: 15_443c040a_444c0415</p></b></h4>
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Mixture</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <!-- <td rowspan="2">
-                                <b>A</b>
-                            </td> -->
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/mixture/smswsj/15_443c040a_444c0415.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- sample 1 start -->
+               <h4><b><p style="color:red;font-size:18px;">Sample 4: 0_442c040o_443c040g</p></b></h4>
+               <table class="audio_demos">
+                   <thead>
+                       <tr>
+                           <th style="text-align:center;">Mixture</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr style="border-top:1px solid black">
+                           <!-- <td rowspan="2">
+                               <b>A</b>
+                           </td> -->
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/mixture/smswsj/0_442c040o_443c040g.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           
+                       </tr>
+                   </tbody>
+               </table>
 
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Methods</th>
-                            <th style="text-align:center;">Source 1</th>
-                            <th style="text-align:center;">Source 2</th>
-                        </tr>
-                    </thead>
+               <table class="audio_demos">
+                   <thead>
+                       <tr>
+                           <th style="text-align:center;">Methods</th>
+                           <th style="text-align:center;">Source 1</th>
+                           <th style="text-align:center;">Source 2</th>
+                       </tr>
+                   </thead>
 
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Clean</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/clean/smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/clean/smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Spatial Clustering</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/spatialcluster/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/spatialcluster/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>IVA</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/IVA/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/IVA/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>UNSSOR</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/UNSSOR/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/UNSSOR/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-ML</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A1</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A2</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_1/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_1/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A3</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_2/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_2/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A4</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_3/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_3/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>ArrayDPS-A5</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_4/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_4/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>TF-GridNet-SMS</b>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/supervised/3ch_smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
-                                    <source src="demo_results/supervised/3ch_smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
+                   <tbody>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>Clean</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/clean/smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/clean/smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>Spatial Clustering</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/spatialcluster/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/spatialcluster/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>IVA</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/IVA/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/IVA/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>UNSSOR</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/UNSSOR/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/UNSSOR/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-ML</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-A1</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_0/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_0/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-A2</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_1/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_1/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-A3</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_2/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_2/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-A4</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_3/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_3/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>ArrayDPS-A5</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
+                       <tr style="border-top:1px solid black">
+                           <td>
+                               <b>TF-GridNet-SMS</b>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/supervised/3ch_smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                           <td>
+                               <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                   <source src="demo_results/supervised/3ch_smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                               </audio>
+                           </td>
+                       </tr>
 
-                    </tbody>
-                </table>
-                <!-- sample 4 end -->
+                   </tbody>
+               </table>
+               <!-- sample 1 end -->
 
                 <!-- sample 5 start -->
                 <h4><b><p style="color:red;font-size:18px;">Sample 5: 999_441c040c_447c040k</p></b></h4>
@@ -1595,6 +1598,624 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                     </tbody>
                 </table>
                 <!-- sample 5 end -->
+
+                <p align="justify">
+                    Here are some randomly selected audio samples (no cherry picking) for Spatialized WSJ, we show the 4 channel separation demos.
+                </p>
+
+                <br>
+
+                <!-- sample 1 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 1: 050a0504_2.4414_443o0313_-2.4414</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/mixture/spatialwsj/sample_0.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>UNSSOR</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_4/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 1 end -->
+
+                <!-- sample 2 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 2: 050a0502_1.463_420a010o_-1.463</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/mixture/spatialwsj/sample_0.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>UNSSOR</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 2 end -->
+
+                <!-- sample 3 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 3: 050a0501_1.7783_442o030z_-1.7783</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/mixture/spatialwsj/sample_0.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/clean/spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/spatialcluster/4ch_spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/IVA/4ch_spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>UNSSOR</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/UNSSOR/4ch_spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/supervised/4ch_spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 3 end -->
+
+
+                
 
                
 
