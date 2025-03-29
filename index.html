@@ -433,6 +433,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 		    			    <li><a href="https://arraydps.github.io/ArrayDPSDemo/#intro_target">Overview</a></li>
                             <!-- <li><a href="https://arraydps.github.io/ArrayDPSDemo/#results_target">Results</a></li> -->
 			    			<li><a href="https://arraydps.github.io/ArrayDPSDemo/#demos_target">Demos</a></li>
+                            <li><a href="https://arraydps.github.io/ArrayDPSDemo/#visualization_target">Visualization</a></li>
 				    		<!-- <li><a href="https://arraydps.github.io/ArrayDPSDemo/#references_target">References</a></li> -->
 				    	</ul>
 			        </div>
@@ -552,6 +553,60 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             width:500px;
                             height:500px;"></a> -->
                     
+            <!-- </div> -->
+
+
+            <div id="visualization_target" style="position: relative; top: -50px;"></div>
+	        <div id="Visualization">
+				<h2><a class="subtitle">Filter and Source Visualization</a></h2>
+                
+                <p>Each figure corresponds to one mixture separation. The first row shows the anehoic source 1, source 1's RIR, and reverberant source 1 (reference channel), from left to right. The second row shows ArrayDPS's separated virtual source 1, FCP estimated filter, and the ArrayDPS separated reverberant source 1 (reference channel). The third and fourth row are the same for source 2.</p>
+                <p>From observation, we can see that ArrayDPS separated virtual source has some dereverberation result, as it's more close to the anechoic clean signal. Our FCP estimated filter is also quite close to the actual RIR. However, in this paper, we do not over claim that we are doing dereverberation as the virtual source is not aligned with the groundtruth anehoic source, which makes it difficult for us to evaluate dereverberation performance. However, the virtual source's demo can be checked in the SMS-WSJ 2-speaker 3-channel shown above.</p>
+
+
+                <!-- <figure>
+                <img src="figs/1015_446c0415_442c040c.png" style="object-fit:contain;
+                    width:600px;
+                    height:600px" class="center" title='Figure 1: Our pipline, training and inference'>
+                    <center>
+                        <figcaption>Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
+                    </center>
+                </figure> -->
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <figure>
+                        <img src="figs/fcp_1015_446c0415_442c040c.png" style="object-fit:contain; width:600px; height:600px" title="Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c">
+                        <figcaption style="text-align: center;">Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
+                    </figure>
+                
+                    <figure>
+                        <img src="figs/fcp_15_443c040a_444c0415.png" style="object-fit:contain; width:600px; height:600px" title="Figure 2: SMS-WSJ: sample 15_443c040a_444c0415">
+                        <figcaption style="text-align: center;">Figure 2: SMS-WSJ: sample 15_443c040a_444c0415</figcaption>
+                    </figure>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <figure>
+                        <img src="figs/fcp_725_444c040l_442c040p.png" style="object-fit:contain; width:600px; height:600px" title="Figure 3: SMS-WSJ: sample 725_444c040l_442c040p">
+                        <figcaption style="text-align: center;">Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
+                    </figure>
+                
+                    <figure>
+                        <img src="figs/fcp_1120_445c040c_441c040m.png" style="object-fit:contain; width:600px; height:600px" title="Figure 4: SMS-WSJ: sample 1120_445c040c_441c040m">
+                        <figcaption style="text-align: center;">Figure 2: SMS-WSJ: sample 15_443c040a_444c0415</figcaption>
+                    </figure>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <figure>
+                        <img src="figs/fcp_0_442c040o_443c040g.png" style="object-fit:contain; width:600px; height:600px" title="Figure 5: SMS-WSJ: sample 0_442c040o_443c040g">
+                        <figcaption style="text-align: center;">Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
+                    </figure>
+                
+                    <figure>
+                        <img src="figs/fcp_999_441c040c_447c040k.png" style="object-fit:contain; width:600px; height:600px" title="Figure 6: SMS-WSJ: sample 999_441c040c_447c040k">
+                        <figcaption style="text-align: center;">Figure 2: SMS-WSJ: sample 15_443c040a_444c0415</figcaption>
+                    </figure>
+                </div>
             <!-- </div> -->
 
             <div id="demos_target" style="position: relative; top: -50px;"></div>
@@ -2476,7 +2531,9 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 <p align="justify" class="larger-text">
                     <b>Audio samples for SMS-WSJ dataset (aligned with UNSSOR's demo), 2 speakers and 3 microphones.</b>
                 </p>
-
+                <p align="justify" >
+                    <b>Note that here we also show the virtual source sampled ArrayDPS. For clean signal, the original anechoic clean speech is displayed in the virtual source column.</b>
+                </p>
                 <!-- sample 2 start -->
                 <h4><b><p style="color:red;font-size:18px;">Sample 1: 1015_446c0415_442c040c</p></b></h4>
                 <table class="audio_demos">
@@ -2506,6 +2563,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <th style="text-align:center;">Methods</th>
                             <th style="text-align:center;">Source 1</th>
                             <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Virtual Source 1</th>
+                            <th style="text-align:center;">Virtual Source 2</th>
                         </tr>
                     </thead>
 
@@ -2522,6 +2581,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/clean/smswsj/1015_446c0415_442c040c/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/1015_446c0415_442c040c/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/1015_446c0415_442c040c/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2584,6 +2653,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2597,6 +2676,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2614,6 +2703,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_1/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2627,6 +2726,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_2/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2644,6 +2753,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_3/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2657,6 +2776,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1015_446c0415_442c040c/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1015_446c0415_442c040c/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2709,6 +2838,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <th style="text-align:center;">Methods</th>
                             <th style="text-align:center;">Source 1</th>
                             <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Virtual Source 1</th>
+                            <th style="text-align:center;">Virtual Source 2</th>
                         </tr>
                     </thead>
 
@@ -2725,6 +2856,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/clean/smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/15_443c040a_444c0415/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/15_443c040a_444c0415/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2787,6 +2928,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2800,6 +2951,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2817,6 +2978,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_1/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2830,6 +3001,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_2/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2847,6 +3028,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_3/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -2860,6 +3051,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/15_443c040a_444c0415/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/15_443c040a_444c0415/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2912,6 +3113,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <th style="text-align:center;">Methods</th>
                             <th style="text-align:center;">Source 1</th>
                             <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Virtual Source 1</th>
+                            <th style="text-align:center;">Virtual Source 2</th>
                         </tr>
                     </thead>
 
@@ -2928,6 +3131,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/clean/smswsj/1120_445c040c_441c040m/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/1120_445c040c_441c040m/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/1120_445c040c_441c040m/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -2990,6 +3203,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_1/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3003,6 +3226,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3020,6 +3253,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_1/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3033,6 +3276,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_2/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3050,6 +3303,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_3/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3063,6 +3326,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/1120_445c040c_441c040m/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/1120_445c040c_441c040m/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3115,6 +3388,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                            <th style="text-align:center;">Methods</th>
                            <th style="text-align:center;">Source 1</th>
                            <th style="text-align:center;">Source 2</th>
+                           <th style="text-align:center;">Virtual Source 1</th>
+                           <th style="text-align:center;">Virtual Source 2</th>
                        </tr>
                    </thead>
 
@@ -3133,6 +3408,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/clean/smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/anechoic/smswsj/0_442c040o_443c040g/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/anechoic/smswsj/0_442c040o_443c040g/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3193,6 +3478,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3208,6 +3503,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_0/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_0/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_0/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3223,6 +3528,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_1/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_1/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_1/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3238,6 +3553,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_2/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_2/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_2/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3253,6 +3578,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_3/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_3/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_3/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3268,6 +3603,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                    <source src="demo_results/arraydps/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
                                </audio>
                            </td>
+                           <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_4/s1.wav" type="audio/wav">
+                            </audio>
+                        </td>
+                        <td>
+                            <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                <source src="demo_results/arraydps_virtual/3ch_smswsj/0_442c040o_443c040g/trial_4/s2.wav" type="audio/wav">
+                            </audio>
+                        </td>
                        </tr>
                        <tr style="border-top:1px solid black">
                            <td>
@@ -3318,6 +3663,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <th style="text-align:center;">Methods</th>
                             <th style="text-align:center;">Source 1</th>
                             <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Virtual Source 1</th>
+                            <th style="text-align:center;">Virtual Source 2</th>
                         </tr>
                     </thead>
 
@@ -3334,6 +3681,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/clean/smswsj/999_441c040c_447c040k/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/999_441c040c_447c040k/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/anechoic/smswsj/999_441c040c_447c040k/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3396,6 +3753,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_3/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3409,6 +3776,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_0/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3426,6 +3803,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_1/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3439,6 +3826,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_2/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -3456,6 +3853,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_3/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -3469,6 +3876,16 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                             <td>
                                 <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
                                     <source src="demo_results/arraydps/3ch_smswsj/999_441c040c_447c040k/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results/arraydps_virtual/3ch_smswsj/999_441c040c_447c040k/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
