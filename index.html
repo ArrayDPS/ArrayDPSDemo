@@ -574,15 +574,1228 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                         <li><b>TF-GridNet-Spatial</b> - Our reproduced TF-GridNet supervised model  trained on Spatialized WSJ, as in row 6a in paper's result table 2</li>
                     </ul>
                 <p></p>
+                <br><br>
+                <style>
+                    .larger-text {
+                        font-size: 25px;
+                    }
+                </style>
 
-                <p align="justify">
-                    Here are some randomly selected audio samples (no cherry picking) for SMS-WSJ dataset (aligned with UNSSOR's demo), we show the 3 channel separation demos.
+
+
+                <!-- 3 speaker start -->
+                <p align="justify" class="larger-text">
+                    <b>Audio samples for Spatialized WSJ0-3Mix, 3 speakers and 4 channels.</b>
                 </p>
 
-                <br>
+                <!-- <br> -->
+
+                <!-- sample 1 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 1: 050a0504_0.34233_447c0210_-0.34233_22ga010q_0</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/mixture/spatialwsj/sample_0.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Source 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_0/trial_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 1 end -->
+
+                <!-- sample 2 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 2: 050a0504_0.71133_446c020g_-0.71133_421c020s_0</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/mixture/spatialwsj/sample_1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Source 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_1/trial_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 2 end -->
+
+                <!-- sample 3 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 3: 050a0504_2.2121_446o0306_-2.2121_052a050b_0</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/mixture/spatialwsj/sample_2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Source 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_2/trial_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 3 end -->
+
+                <!-- sample 4 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 4: 050a0505_0.8216_22ho010j_-0.8216_445o030v_0</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/mixture/spatialwsj/sample_3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Source 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_3/trial_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 4 end -->
+
+                <!-- sample 5 start -->
+                <h4><b><p style="color:red;font-size:18px;">Sample 5: 050a0505_1.5166_446c020f_-1.5166_443o030s_0</p></b></h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Mixture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <!-- <td rowspan="2">
+                                <b>A</b>
+                            </td> -->
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/mixture/spatialwsj/sample_4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Methods</th>
+                            <th style="text-align:center;">Source 1</th>
+                            <th style="text-align:center;">Source 2</th>
+                            <th style="text-align:center;">Source 3</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Clean</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/clean/spatialwsj/sample_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Spatial Clustering</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/spatialcluster/sample_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>IVA</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/IVA/sample_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-ML</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A1</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_1/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_1/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_1/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A2</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_0/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A3</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_2/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_2/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_2/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A4</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_3/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_3/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_3/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>ArrayDPS-A5</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/arraydps/sample_4/trial_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>TF-GridNet-Spatial</b>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_4/s1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_4/s2.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls="" class="audio-player" preload="metadata" style="width: 220px;">
+                                    <source src="demo_results_3spk/supervised/sample_4/s3.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!-- sample 5 end -->
+
+                <!-- 3 speaker end -->
 
 
-
+                <p align="justify" class="larger-text">
+                    <b>Audio samples for SMS-WSJ dataset (aligned with UNSSOR's demo), 2 speakers and 3 channels.</b>
+                </p>
 
                 <!-- sample 2 start -->
                 <h4><b><p style="color:red;font-size:18px;">Sample 1: 1015_446c0415_442c040c</p></b></h4>
@@ -1598,12 +2811,13 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                     </tbody>
                 </table>
                 <!-- sample 5 end -->
-
-                <p align="justify">
-                    Here are some randomly selected audio samples (no cherry picking) for Spatialized WSJ, we show the 4 channel separation demos.
+                <br><br>
+                
+                <p align="justify" class="larger-text">
+                    <b>Audio samples for Spatialized WSJ0-2Mix, 2 speakers and 4 channels.</b>
                 </p>
 
-                <br>
+                <!-- <br> -->
 
                 <!-- sample 1 start -->
                 <h4><b><p style="color:red;font-size:18px;">Sample 1: 050a0504_2.4414_443o0313_-2.4414</p></b></h4>
