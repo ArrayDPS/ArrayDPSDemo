@@ -452,7 +452,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
         <div id="container">
 
             <!-- 🧭 Table of Contents starts here -->
-            <div id="toc" style="margin-top: 40px; margin-bottom: 10px; padding-left: 25px;">
+            <!-- <div id="toc" style="margin-top: 40px; margin-bottom: 10px; padding-left: 30px;"> -->
+            <div id="intro">
                 <h2><a class="subtitle">Table of Contents</a></h2>
                 <ul style="list-style-type: none; padding-left: 0;">
                     <li style="margin-bottom: 10px;"><a href="#intro_target">➤ Brief Overview</a></li>
@@ -477,21 +478,29 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
             <div id="demos2spk_target" style="position: relative; top: -50px;"></div>
             <div id="demos">
                 <h2><a class="subtitle">Audio Demo for Synthetic 2-speaker Mixtures</a></h2>
+
+                <p>Here is the main result of our paper for 2-speaker separation on 3-channel SMS-WSJ dataset.</p>
+                <div style="text-align: center;">
+                    <img src="figs/table1.png" alt="Description of image" width="300" height="200">
+                </div>
+                  
+
                 <p align="justify">
                     The methods we evaluate are as follows:
+
                     </p><ul align="justify">
                         <li><b>CLEAN</b> - Reference channel source images (reference)</li>
-                        <li><b>Spatial Clustering</b> - Spatial Clustering method, as in row 1a in paper's result table</li>
-                        <li><b>IVA</b>  - IVA with Gaussian prior, as in row 1c in paper's result table</li>
+                        <li><b>Spatial Clustering</b> - Spatial Clustering method, as in row 1a in the Table</li>
+                        <li><b>IVA</b>  - IVA with Gaussian prior, as in row 1c in the Table</li>
                         <li><b>UNSSOR</b>  - UNSSOR as in row 1d in paper's result table</li>
-                        <li><b>ArrayDPS-ML</b> - Our proposed ArrayDPS, as in row 4a in paper's result table, the maximum likelihood sample from the five samples</li>
-                        <li><b>ArrayDPS-A1</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, first sampled result</li>
-                        <li><b>ArrayDPS-A2</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, second sampled result</li>
-                        <li><b>ArrayDPS-A3</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, third sampled result</li>
-                        <li><b>ArrayDPS-A4</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, fourth sampled result</li>
-                        <li><b>ArrayDPS-A5</b> - Our proposed ArrayDPS, as in row 1c in paper's result table, fifth sampled result</li>
-                        <li><b>TF-GridNet-SMS</b> - Our reproduced TF-GridNet supervised model  trained on SMSWSJ, as in row 5b in paper's result table 1</li>
-                        <li><b>TF-GridNet-Spatial</b> - Our reproduced TF-GridNet supervised model  trained on Spatialized WSJ, as in row 6a in paper's result table 2</li>
+                        <li><b>ArrayDPS-ML</b> - Our proposed ArrayDPS, as in row 4a in the Table, the maximum likelihood sample from the five samples</li>
+                        <li><b>ArrayDPS-A1</b> - Our proposed ArrayDPS, as in row 2a in the Table, first sampled result</li>
+                        <li><b>ArrayDPS-A2</b> - Our proposed ArrayDPS, as in row 2a in the Table, second sampled result</li>
+                        <li><b>ArrayDPS-A3</b> - Our proposed ArrayDPS, as in row 2a in the Table, third sampled result</li>
+                        <li><b>ArrayDPS-A4</b> - Our proposed ArrayDPS, as in row 2a in the Table, fourth sampled result</li>
+                        <li><b>ArrayDPS-A5</b> - Our proposed ArrayDPS, as in row 2a in the Table, fifth sampled result</li>
+                        <li><b>TF-GridNet-SMS</b> - Our reproduced TF-GridNet supervised model  trained on SMSWSJ, as in row 5b in the Table</li>
+                        <li><b>TF-GridNet-Spatial</b> - Our reproduced TF-GridNet supervised model  trained on Spatialized WSJ, as in row 5c in the Table</li>
                     </ul>
                 <p></p>
                 <br><br>
@@ -2200,7 +2209,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                 </audio>
                             </td>
                         </tr>
-                        <tr style="border-top:1px solid black">
+                        <!-- <tr style="border-top:1px solid black">
                             <td>
                                 <b>ArrayDPS-A1</b>
                             </td>
@@ -2274,7 +2283,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/4ch_spatialwsj/sample_2/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr style="border-top:1px solid black">
                             <td>
                                 <b>TF-GridNet-Spatial</b>
@@ -2403,7 +2412,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                 </audio>
                             </td>
                         </tr>
-                        <tr style="border-top:1px solid black">
+                        <!-- <tr style="border-top:1px solid black">
                             <td>
                                 <b>ArrayDPS-A1</b>
                             </td>
@@ -2477,7 +2486,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     <source src="demo_results/arraydps/4ch_spatialwsj/sample_0/trial_4/s2.wav" type="audio/wav">
                                 </audio>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr style="border-top:1px solid black">
                             <td>
                                 <b>TF-GridNet-Spatial</b>
@@ -3190,14 +3199,31 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 <div id="demos3spk">
                     <h2><a class="subtitle">Audio Demo for Synthetic 3-speaker Mixtures</a></h2>
 
-                    <!-- <figure>
-                    <img src="figs/1015_446c0415_442c040c.png" style="object-fit:contain;
-                        width:600px;
-                        height:600px" class="center" title='Figure 1: Our pipline, training and inference'>
-                        <center>
-                            <figcaption>Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
-                        </center>
-                    </figure> -->
+
+                    <p>Here is the main result of our paper for 3-speaker separation on 4-channel Spatialized-WSJ dataset.</p>
+                    <div style="text-align: center;">
+                        <img src="figs/table2.png" alt="Description of image" width="300" height="200">
+                    </div>
+                      
+    
+                    <p align="justify">
+                        The methods we evaluate are as follows:
+    
+                        </p><ul align="justify">
+                            <li><b>CLEAN</b> - Reference channel source images (reference)</li>
+                            <li><b>Spatial Clustering</b> - Spatial Clustering method, as in row 1a in the Table</li>
+                            <li><b>IVA</b>  - IVA with Gaussian prior, as in row 1c in the Table</li>
+                            <li><b>ArrayDPS-ML</b> - Our proposed ArrayDPS, as in row 4a in the Table, the maximum likelihood sample from the five samples</li>
+                            <li><b>ArrayDPS-A1</b> - Our proposed ArrayDPS, as in row 3a in the Table, first sampled result</li>
+                            <li><b>ArrayDPS-A2</b> - Our proposed ArrayDPS, as in row 3a in the Table, second sampled result</li>
+                            <li><b>ArrayDPS-A3</b> - Our proposed ArrayDPS, as in row 3a in the Table, third sampled result</li>
+                            <li><b>ArrayDPS-A4</b> - Our proposed ArrayDPS, as in row 3a in the Table, fourth sampled result</li>
+                            <li><b>ArrayDPS-A5</b> - Our proposed ArrayDPS, as in row 3a in the Table, fifth sampled result</li>
+                            <li><b>TF-GridNet-Spatial</b> - Our reproduced TF-GridNet supervised model  trained on Spatialized WSJ, as in row 5a in the Table</li>
+                        </ul>
+                    <p></p>
+                    <br><br>
+
                     <p align="justify" class="larger-text">
                         <b>Audio samples for Spatialized WSJ0-3Mix, 3 speakers and 4 microphones.</b>
                     </p>
@@ -3798,7 +3824,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     </audio>
                                 </td>
                             </tr>
-                            <tr style="border-top:1px solid black">
+                            <!-- <tr style="border-top:1px solid black">
                                 <td>
                                     <b>ArrayDPS-A1</b>
                                 </td>
@@ -3897,7 +3923,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                         <source src="demo_results_3spk/arraydps/sample_2/trial_4/s3.wav" type="audio/wav">
                                     </audio>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr style="border-top:1px solid black">
                                 <td>
                                     <b>TF-GridNet-Spatial</b>
@@ -4038,7 +4064,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     </audio>
                                 </td>
                             </tr>
-                            <tr style="border-top:1px solid black">
+                            <!-- <tr style="border-top:1px solid black">
                                 <td>
                                     <b>ArrayDPS-A1</b>
                                 </td>
@@ -4137,7 +4163,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                         <source src="demo_results_3spk/arraydps/sample_3/trial_4/s3.wav" type="audio/wav">
                                     </audio>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr style="border-top:1px solid black">
                                 <td>
                                     <b>TF-GridNet-Spatial</b>
@@ -4278,7 +4304,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                     </audio>
                                 </td>
                             </tr>
-                            <tr style="border-top:1px solid black">
+                            <!-- <tr style="border-top:1px solid black">
                                 <td>
                                     <b>ArrayDPS-A1</b>
                                 </td>
@@ -4377,7 +4403,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                                         <source src="demo_results_3spk/arraydps/sample_4/trial_4/s3.wav" type="audio/wav">
                                     </audio>
                                 </td>
-                            </tr>
+                            </tr> -->
                             <tr style="border-top:1px solid black">
                                 <td>
                                     <b>TF-GridNet-Spatial</b>
@@ -4418,31 +4444,34 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c</figcaption>
                         <img src="figs/fcp_1015_446c0415_442c040c.png" style="object-fit:contain; width:650px; height:650px" title="Figure 1: SMS-WSJ: sample 1015_446c0415_442c040c">
                     </figure>
-                
+                    <!-- Vertical line separator -->
+                    <div style="border-left: 3px dashed #999; height: 650px; margin: 0 30px;"></div>
                     <figure>
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 2: SMS-WSJ: sample 15_443c040a_444c0415</figcaption>
                         <img src="figs/fcp_15_443c040a_444c0415.png" style="object-fit:contain; width:650px; height:650px" title="Figure 2: SMS-WSJ: sample 15_443c040a_444c0415">
                     </figure>
                 </div>
-                <hr style="border: none; border-top: 1px dashed #999; margin: 30px 0;">
+                <hr style="border: none; border-top: 3px dashed #999; margin: 30px 0;">
                 <div style="display: flex; justify-content: center; gap: 20px;">
                     <figure>
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 3: SMS-WSJ: sample 725_444c040l_442c040p</figcaption>
                         <img src="figs/fcp_725_444c040l_442c040p.png" style="object-fit:contain; width:650px; height:650px" title="Figure 3: SMS-WSJ: sample 725_444c040l_442c040p">
                     </figure>
-                
+                    <!-- Vertical line separator -->
+                    <div style="border-left: 3px dashed #999; height: 650px; margin: 0 30px;"></div>
                     <figure>
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 4: SMS-WSJ: sample 1120_445c040c_441c040m</figcaption>
                         <img src="figs/fcp_1120_445c040c_441c040m.png" style="object-fit:contain; width:650px; height:650px" title="Figure 4: SMS-WSJ: sample 1120_445c040c_441c040m">
                     </figure>
                 </div>
-                <hr style="border: none; border-top: 1px dashed #999; margin: 30px 0;">
+                <hr style="border: none; border-top: 3px dashed #999; margin: 30px 0;">
                 <div style="display: flex; justify-content: center; gap: 20px;">
                     <figure>
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 5: SMS-WSJ: sample 0_442c040o_443c040g</figcaption>
                         <img src="figs/fcp_0_442c040o_443c040g.png" style="object-fit:contain; width:650px; height:650px" title="Figure 5: SMS-WSJ: sample 0_442c040o_443c040g">
                     </figure>
-                
+                    <!-- Vertical line separator -->
+                    <div style="border-left: 3px dashed #999; height: 650px; margin: 0 30px;"></div>
                     <figure>
                         <figcaption style="text-align: center; margin-bottom: -30px; font-weight: 500; font-size: 16px;">Figure 6: SMS-WSJ: sample 999_441c040c_447c040k</figcaption>
                         <img src="figs/fcp_999_441c040c_447c040k.png" style="object-fit:contain; width:650px; height:650px" title="Figure 6: SMS-WSJ: sample 999_441c040c_447c040k">
